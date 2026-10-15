@@ -1,0 +1,39 @@
+{
+  "name": "hotelbeds-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server wrapping the Hotelbeds (HBX Group) Hotel Booking and Content APIs: search, check rate, book, retrieve, quote cancellation, cancel, and hotel content.",
+  "type": "module",
+  "bin": {
+    "hotelbeds-mcp-server": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "smoke": "node test/smoke.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "hotelbeds",
+    "hbx",
+    "hotels",
+    "travel",
+    "booking"
+  ],
+  "author": "Karan Rao",
+  "license": "MIT",
+  "homepage": "https://github.com/karanrao/hotelbeds-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karanrao/hotelbeds-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karanrao/hotelbeds-mcp-server/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  }
+}
